@@ -9,6 +9,7 @@ const GenericModel = Model => ({
     getById(id) {
         return Model.findOne({ where: { id } });
     },
+    
     updateById(id, data) {
         return Model.update(data, { where: { id } });
     },
